@@ -14,6 +14,7 @@
 		AB7B075A286CB189007DCAA6 /* emf_sampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7B0759286CB189007DCAA6 /* emf_sampleTests.swift */; };
 		AB7B0764286CB18A007DCAA6 /* emf_sampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7B0763286CB18A007DCAA6 /* emf_sampleUITests.swift */; };
 		AB7B0766286CB18A007DCAA6 /* emf_sampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7B0765286CB18A007DCAA6 /* emf_sampleUITestsLaunchTests.swift */; };
+		ABBF53BF286F78FB000DF9A8 /* enterprise-mobile-framework in Frameworks */ = {isa = PBXBuildFile; productRef = ABBF53BE286F78FB000DF9A8 /* enterprise-mobile-framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,7 +58,7 @@
 		AB7B075F286CB18A007DCAA6 /* emf-sampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "emf-sampleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB7B0763286CB18A007DCAA6 /* emf_sampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = emf_sampleUITests.swift; sourceTree = "<group>"; };
 		AB7B0765286CB18A007DCAA6 /* emf_sampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = emf_sampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		AB7BF1C7286E14F700EDD1C7 /* enterprise-mobile-framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "enterprise-mobile-framework"; path = "../../enterprise-mobile-framework"; sourceTree = "<group>"; };
+		ABBF538C286F4F59000DF9A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABBF53BF286F78FB000DF9A8 /* enterprise-mobile-framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,12 +90,12 @@
 		AB7B073C286CB187007DCAA6 = {
 			isa = PBXGroup;
 			children = (
-				AB7BF1C6286E14F700EDD1C7 /* Packages */,
-				AB7B0810286CD902007DCAA6 /* Frameworks */,
+				ABBF5391286F5722000DF9A8 /* Packages */,
 				AB7B0747286CB187007DCAA6 /* emf-sample */,
 				AB7B0758286CB189007DCAA6 /* emf-sampleTests */,
 				AB7B0762286CB18A007DCAA6 /* emf-sampleUITests */,
 				AB7B0746286CB187007DCAA6 /* Products */,
+				ABBF53A5286F58D3000DF9A8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,6 +112,7 @@
 		AB7B0747286CB187007DCAA6 /* emf-sample */ = {
 			isa = PBXGroup;
 			children = (
+				ABBF538C286F4F59000DF9A8 /* Info.plist */,
 				AB7B0748286CB187007DCAA6 /* emf_sampleApp.swift */,
 				AB7B074A286CB187007DCAA6 /* ContentView.swift */,
 				AB7B074C286CB189007DCAA6 /* Assets.xcassets */,
@@ -143,19 +146,18 @@
 			path = "emf-sampleUITests";
 			sourceTree = "<group>";
 		};
-		AB7B0810286CD902007DCAA6 /* Frameworks */ = {
+		ABBF5391286F5722000DF9A8 /* Packages */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Frameworks;
+			path = Packages;
 			sourceTree = "<group>";
 		};
-		AB7BF1C6286E14F700EDD1C7 /* Packages */ = {
+		ABBF53A5286F58D3000DF9A8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				AB7BF1C7286E14F700EDD1C7 /* enterprise-mobile-framework */,
 			);
-			name = Packages;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,6 +177,9 @@
 			dependencies = (
 			);
 			name = "emf-sample";
+			packageProductDependencies = (
+				ABBF53BE286F78FB000DF9A8 /* enterprise-mobile-framework */,
+			);
 			productName = "emf-sample";
 			productReference = AB7B0745286CB187007DCAA6 /* emf-sample.app */;
 			productType = "com.apple.product-type.application";
@@ -247,6 +252,9 @@
 				Base,
 			);
 			mainGroup = AB7B073C286CB187007DCAA6;
+			packageReferences = (
+				ABBF53BD286F78FB000DF9A8 /* XCRemoteSwiftPackageReference "emf-trial-swift-package" */,
+			);
 			productRefGroup = AB7B0746286CB187007DCAA6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -452,9 +460,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"emf-sample/Preview Content\"";
-				DEVELOPMENT_TEAM = WHHL3JA4FX;
+				DEVELOPMENT_TEAM = N34E47Y98M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "emf-sample/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -464,7 +473,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jpmc.gti.ewp.emf-sample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -483,9 +492,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"emf-sample/Preview Content\"";
-				DEVELOPMENT_TEAM = WHHL3JA4FX;
+				DEVELOPMENT_TEAM = N34E47Y98M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "emf-sample/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -495,7 +505,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jpmc.gti.ewp.emf-sample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -621,6 +631,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		ABBF53BD286F78FB000DF9A8 /* XCRemoteSwiftPackageReference "emf-trial-swift-package" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/veena-ram/emf-trial-swift-package";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		ABBF53BE286F78FB000DF9A8 /* enterprise-mobile-framework */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ABBF53BD286F78FB000DF9A8 /* XCRemoteSwiftPackageReference "emf-trial-swift-package" */;
+			productName = "enterprise-mobile-framework";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AB7B073D286CB187007DCAA6 /* Project object */;
 }

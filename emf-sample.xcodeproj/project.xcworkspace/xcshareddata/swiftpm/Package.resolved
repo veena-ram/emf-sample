@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "emf-trial-swift-package",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/veena-ram/emf-trial-swift-package",
+      "state" : {
+        "branch" : "main",
+        "revision" : "dc246862bee482a47f5147fc61945fa5c537ed4d"
+      }
+    }
+  ],
+  "version" : 2
+}
