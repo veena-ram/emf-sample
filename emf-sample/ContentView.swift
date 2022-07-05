@@ -8,6 +8,7 @@
 import SwiftUI
 import enterprise_mobile_framework
 
+
 struct ContentView: View {
     var message = EMF.greet()
     var body: some View {

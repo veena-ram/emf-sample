@@ -26,6 +26,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         
         EMFHelper.shared.initializeEmf()
+        
+        EMFHelper.shared.checkAWSdk()
         return true
     }
 }

@@ -1,12 +1,21 @@
 {
   "pins" : [
     {
-      "identity" : "emf-trial-swift-package",
+      "identity" : "enterprisemobileframework",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/veena-ram/emf-trial-swift-package",
+      "location" : "https://github.com/veena-ram/EnterpriseMobileFramework",
       "state" : {
-        "branch" : "main",
-        "revision" : "dc246862bee482a47f5147fc61945fa5c537ed4d"
+        "branch" : "master",
+        "revision" : "74c1a750e0ffa3cabfcf4142ec89013c5501c2b4"
+      }
+    },
+    {
+      "identity" : "ios-workspaceone-sdk",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/vmwareairwatchsdk/iOS-WorkspaceONE-SDK",
+      "state" : {
+        "branch" : "master",
+        "revision" : "6d22e73392ce270e224673343eb6fd5e4c0689dc"
       }
     }
   ],
