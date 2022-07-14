@@ -11,17 +11,19 @@ import SwiftUI
 struct DLPCopyPasteView: View {
     
     @State var textfield: String = ""
-    @State var textEditor: String = ""
+    @State var textEditor: String = "This is some Editable TextEditor"
     @State var secureField: String = ""
 
     var body: some View {
+        
+        List {
         Text("SwiftUI Control - Text").padding()
         
         TextField("SwiftUI Control - TextField", text: $textfield).padding()
         
-        Text("Testing SwiftUI Control - TextEditor")
         TextEditor(text: $textEditor).padding()
         
         SecureField("SwiftUI Control - SecureField", text: $secureField).padding()
+        }
     }
 }

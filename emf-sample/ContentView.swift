@@ -16,19 +16,25 @@ struct ContentView: View {
 //    let imageUrl = URL(string: "https://www.gardeningknowhow.com/wp-content/uploads/2007/08/sunflowers.jpg")!
 //    let image : Image = Image("https://www.gardeningknowhow.com/wp-content/uploads/2007/08/sunflowers.jpg")
     
-    let fileUrl = Bundle.main.url(forResource: "Image", withExtension: "png")!
-    @State private var showingPreview = false
+//    let fileUrl = Bundle.main.url(forResource: "samplePDF", withExtension: "pdf")!
+//    @State private var showingPreview = false
     
     var body: some View {
-        Button("Preview File") {
-            self.showingPreview = true
+        
+        VStack{
+            NavigationView{
+                NavigationLink("Copy-Paste View", destination: DLPCopyPasteView())
+            }
         }
-        .sheet(isPresented: $showingPreview) {
-            FileViewer(
-                url: self.fileUrl,
-                isPresented: self.$showingPreview
-            )
-        }
+//        Button("Preview File") {
+//            self.showingPreview = true
+//        }
+//        .sheet(isPresented: $showingPreview) {
+//            FileViewer(
+//                url: self.fileUrl,
+//                isPresented: self.$showingPreview
+//            )
+//        }
     }
     
     func getUrl(fileUrl: String, fileExtension: String) -> URL? {

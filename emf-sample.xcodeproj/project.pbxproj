@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		AB1E3EA02874A44F00E7F6A7 /* PocPackage in Frameworks */ = {isa = PBXBuildFile; productRef = AB1E3E9F2874A44F00E7F6A7 /* PocPackage */; };
-		AB1E3EB1287C98BC00E7F6A7 /* Image.png in Resources */ = {isa = PBXBuildFile; fileRef = AB1E3EB0287C98BC00E7F6A7 /* Image.png */; };
 		AB1E3EB5287C98EA00E7F6A7 /* hello.js in Resources */ = {isa = PBXBuildFile; fileRef = AB1E3EB4287C98EA00E7F6A7 /* hello.js */; };
 		AB1E3EB7287C98FD00E7F6A7 /* error_trace.txt in Resources */ = {isa = PBXBuildFile; fileRef = AB1E3EB6287C98FD00E7F6A7 /* error_trace.txt */; };
 		AB1E3EBC2880978300E7F6A7 /* DLPCopyPasteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1E3EBB2880978300E7F6A7 /* DLPCopyPasteView.swift */; };
@@ -53,7 +52,6 @@
 
 /* Begin PBXFileReference section */
 		AB1E3EAF287C914500E7F6A7 /* samplePDF.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = samplePDF.pdf; sourceTree = "<group>"; };
-		AB1E3EB0287C98BC00E7F6A7 /* Image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Image.png; path = ../../../Image.png; sourceTree = "<group>"; };
 		AB1E3EB4287C98EA00E7F6A7 /* hello.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = hello.js; path = ../../../../Downloads/hello.js; sourceTree = "<group>"; };
 		AB1E3EB6287C98FD00E7F6A7 /* error_trace.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = error_trace.txt; path = ../../../../Downloads/error_trace.txt; sourceTree = "<group>"; };
 		AB1E3EBB2880978300E7F6A7 /* DLPCopyPasteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DLPCopyPasteView.swift; sourceTree = "<group>"; };
@@ -100,7 +98,6 @@
 			isa = PBXGroup;
 			children = (
 				AB1E3EAF287C914500E7F6A7 /* samplePDF.pdf */,
-				AB1E3EB0287C98BC00E7F6A7 /* Image.png */,
 				AB1E3EB4287C98EA00E7F6A7 /* hello.js */,
 				AB1E3EB6287C98FD00E7F6A7 /* error_trace.txt */,
 			);
@@ -297,7 +294,6 @@
 				AB1E3EB7287C98FD00E7F6A7 /* error_trace.txt in Resources */,
 				AB1E3EB5287C98EA00E7F6A7 /* hello.js in Resources */,
 				AB7B074D286CB189007DCAA6 /* Assets.xcassets in Resources */,
-				AB1E3EB1287C98BC00E7F6A7 /* Image.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
