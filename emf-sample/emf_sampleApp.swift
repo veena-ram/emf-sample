@@ -10,7 +10,9 @@ import enterprise_mobile_framework
 
 @main
 struct emf_sampleApp: App {
-    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+    
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate1
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
@@ -22,12 +24,14 @@ struct emf_sampleApp: App {
 }
 
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    
+//    @UIApplicationDelegateAdaptor(UIAppHelper.self) var delegate2
+
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         
-        EMFHelper.shared.initializeEmf()
-        
-        EMFHelper.shared.checkAWSdk()
+        EMFHelper.shared.initializeEmf(callbackScheme: "emfFrameworkScheme")
+                
         return true
     }
 }

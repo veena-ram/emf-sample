@@ -20,5 +20,7 @@
 		<string>AWSSOBroker2</string>
 		<string>airwatch</string>
 	</array>
+	<key>UIFileSharingEnabled</key>
+	<false/>
 </dict>
 </plist>

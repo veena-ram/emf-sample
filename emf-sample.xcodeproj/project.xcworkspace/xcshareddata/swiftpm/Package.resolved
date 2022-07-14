@@ -1,21 +1,12 @@
 {
   "pins" : [
     {
-      "identity" : "enterprisemobileframework",
+      "identity" : "poc-package",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/veena-ram/EnterpriseMobileFramework",
+      "location" : "https://github.com/veena-ram/poc-package",
       "state" : {
         "branch" : "master",
-        "revision" : "74c1a750e0ffa3cabfcf4142ec89013c5501c2b4"
-      }
-    },
-    {
-      "identity" : "ios-workspaceone-sdk",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/vmwareairwatchsdk/iOS-WorkspaceONE-SDK",
-      "state" : {
-        "branch" : "master",
-        "revision" : "6d22e73392ce270e224673343eb6fd5e4c0689dc"
+        "revision" : "c366e4a0518379ed6ee9d0d71d6a7768e0645bb3"
       }
     }
   ],
